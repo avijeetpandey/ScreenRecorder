@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DC8535DE2D808CDB00CDE954 /* Notes.md in Resources */ = {isa = PBXBuildFile; fileRef = DC8535DD2D808CD100CDE954 /* Notes.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DC8535C12D808AAC00CDE954 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,8 @@
 		DC8535B02D808AAA00CDE954 /* ScreenRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8535C02D808AAC00CDE954 /* ScreenRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8535CA2D808AAC00CDE954 /* ScreenRecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenRecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8535DD2D808CD100CDE954 /* Notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Notes.md; sourceTree = "<group>"; };
+		DC8535E02D808D4A00CDE954 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +81,11 @@
 		DC8535A72D808AAA00CDE954 = {
 			isa = PBXGroup;
 			children = (
+				DC8535DD2D808CD100CDE954 /* Notes.md */,
 				DC8535B22D808AAA00CDE954 /* ScreenRecorder */,
 				DC8535C32D808AAC00CDE954 /* ScreenRecorderTests */,
 				DC8535CD2D808AAC00CDE954 /* ScreenRecorderUITests */,
+				DC8535DF2D808D4A00CDE954 /* Frameworks */,
 				DC8535B12D808AAA00CDE954 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +98,14 @@
 				DC8535CA2D808AAC00CDE954 /* ScreenRecorderUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DC8535DF2D808D4A00CDE954 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC8535E02D808D4A00CDE954 /* ReplayKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8535DE2D808CDB00CDE954 /* Notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

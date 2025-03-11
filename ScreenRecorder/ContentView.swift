@@ -6,16 +6,25 @@
 //
 
 import SwiftUI
+import ReplayKit
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            
+            Button  {
+                handleScreenRecording()
+            } label: {
+                Text("Start screen recording")
+            }
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
+    
+    func handleScreenRecording() {
+        let recorder = RPScreenRecorder.shared()
+        recorder.isMicrophoneEnabled = true
+        recorder.startRecording { (error) in
+            print(error?.localizedDescription)
+        }
+    }
 }
